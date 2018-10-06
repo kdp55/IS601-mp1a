@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -6,7 +7,15 @@
  * Time: 12:14 AM
  */
 
-echo "test";
 
+main:: start("democsv.csv");
+class main
+{
+    static public function start($filename)
+    {
+        $records = csv::getRecords($filename);
+        $table = html::createTable($records);
+        system:: Printpage($table);
+    }
 
-echo "kaksha";
+}

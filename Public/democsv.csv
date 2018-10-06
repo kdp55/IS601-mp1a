@@ -1,0 +1,8 @@
+permalink,company,numEmps,category,city,state,fundedDate,raisedAmt,raisedCurrency,round
+lifelock,LifeLock,350,web,Tempe,AZ,1-May-07,6850000,USD,b
+lifelock,LifeLock,150,web,Tempe,AZ,1-Oct-06,6000000,USD,a
+lifelock,LifeLock,250,web,Tempe,AZ,1-Jan-08,25000000,USD,c
+facebook,Facebook,450,web,Palo Alto,CA,1-Oct-07,300000000,USD,c
+facebook,Facebook,450,web,Palo Alto,CA,1-Mar-08,40000000,USD,c
+facebook,Facebook,450,web,Palo Alto,CA,15-Jan-08,15000000,USD,c
+facebook,Facebook,450,web,Palo Alto,CA,1-May-08,100000000,USD,debt_round
