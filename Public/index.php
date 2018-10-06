@@ -19,3 +19,30 @@ class main
     }
 
 }
+
+class csv
+{
+    static public function getRecords($filename)
+    {
+        $file = fopen($filename,"r");
+        $fields = array();
+        $count = 0;
+
+        while(! feof($file))
+        {
+            $record = fgetcsv($file);
+            if ($count == 0) {
+                $fields = $record;
+            }
+            else
+            {
+                $records[] = RecordFactory::create($fields, $record);
+            }
+            $count++;
+        }
+        fclose($file);
+        return $records;
+
+
+    }
+}
