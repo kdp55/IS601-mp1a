@@ -85,3 +85,66 @@ class RecordFactory
     }
 
 }
+
+//class utilities{
+//  public static function csvxyz($array)
+//{
+//  foreach
+//}
+//}
+
+class html
+{
+    public static function createTable($array)
+    {
+        /**
+         * @param $array
+         * @return string
+         */
+        echo "<html lang=\"en\">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=\"utf-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
+</head>
+</html>";
+        //table row
+        $html = '<table class="table table-striped">';
+        // header row
+        $html .= '<tr>';
+        foreach($array[0] as $key=>$value){
+            $html .= '<th>' . htmlspecialchars($key) . '</th>';
+        }
+        $html .= '</tr>';
+
+        // data rows
+        foreach( $array as $key=>$value){
+            $html .= '<tr>';
+            foreach($value as $key2=>$value2){
+                $html .= '<td>' . htmlspecialchars($value2) . '</td>';
+            }
+            $html .= '</tr>';
+        }
+
+        // finish table and return it
+
+        $html .= '</table>';
+        return $html;
+
+
+
+    }
+
+
+}
+
+class system{
+    static public function Printpage($page)
+    {
+        echo $page;
+    }
+
+}
